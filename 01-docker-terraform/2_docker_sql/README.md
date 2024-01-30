@@ -25,7 +25,7 @@ docker ps -a <shows all inactive containers>
 ```
 
 ```
-<runs a postgres container instance with environment variables (-e tag) and volumes (-v). As a volume is being used, the state of a postgres database is maintained in the ny_taxi_postgres_data folder, even when the container is recreated>
+<runs a postgres container instance with environment variables (-e tag) and volumes (-v). As a volume is being used, the state of a postgres database is maintained in the ny_taxi_postgres_data folder, even when the container is recthemereated>
 
 
 docker run -it \
