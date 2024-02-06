@@ -1,6 +1,7 @@
 services:
   pg-database:
     image: postgres:13
+    env_file: ./database.env
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
@@ -11,6 +12,7 @@ services:
       - "5432:5432"
   pgadmin: 
     image: dpage/pgadmin4
+    env_file: ./database.env
     environment:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
@@ -27,6 +29,3 @@ volumes:
       external: true
     pgadmin:
       external: true
-
-env_file:
-  - database.env
