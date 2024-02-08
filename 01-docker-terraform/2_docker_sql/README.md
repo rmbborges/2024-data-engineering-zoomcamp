@@ -113,3 +113,13 @@ docker run -it \
       --color=yellow \
       --period=2021-01
 ```
+
+```
+<creating containers from a docker compose file>
+docker compose up
+```
+
+```
+<stoping and exiting containers from a docker compose file>
+docker compose down
+```

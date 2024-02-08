@@ -2,3 +2,8 @@
 **/ny_taxi_postgres_data/*
 database.env
 .ipynb_checkpoints
+**/terraform-service-account.json
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
